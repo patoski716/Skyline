@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'contact',
     'property',
+    'accounts',
     "rest_framework",
     'drf_yasg',
     "drf_spectacular",
@@ -145,3 +146,6 @@ SWAGGER_SETTINGS = {
     },
     "DEFAULT_AUTO_SCHEMA_CLASS": "drf_yasg.openapi.SwaggerView",
 }
+
+
+AUTH_USER_MODEL = 'accounts.User'
